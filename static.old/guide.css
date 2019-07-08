@@ -1,0 +1,41 @@
+html,body{ background: url(/static/guide_bg.jpg) no-repeat bottom center; background-size: 100%; height: 100%; min-width:800px; min-height:600px;}
+#guide_box{ width: 100%; height: 100%; overflow: hidden; position: relative;}
+#guide_logo1{ position: absolute; left: 0; top: 0; width: 258px;}
+#guide_logo2{ position: absolute; left: 8%; top: 25%; width: 35%;}
+#guide_city{ position: absolute; bottom: 8%; left: 0; width: 100%;}
+#guide_href{ position: absolute; bottom: 40%; left: 12%; width: 450px;}
+#guide_href img{ width: 130px;}
+#guide_cloud_l{ position: absolute; left: 0px; bottom: 0px; width: 15%; height: auto;}
+#guide_cloud_r{ position: absolute; right: 0px; bottom: 0px; width: 30%; height: auto;}
+
+#guide_earth{ position: absolute; bottom: 0px; right: 11%;  width: 45%;}
+#guide_earth>div{ position: relative; width: 100%;}
+#guide_earth_balloon_1{ position: absolute; top: 0; left: 15%; width: 20px; animation: young_Shake 5s ease infinite; -webkit-animation: young_Shake 5s ease infinite;}
+#guide_earth_balloon_2{ position: absolute; top: 15%; right: 28%; width: 15px; animation: young_Shake 8s ease infinite; -webkit-animation: young_Shake 5s ease infinite;}
+#guide_earth_balloon_3{ position: absolute; top: 20%; right: 25%; width: 10px; animation: young_Shake 7s ease infinite; -webkit-animation: young_Shake 5s ease infinite;}
+
+#copyr{ width: 100%; position: absolute; bottom: 0px; text-align: center; color: #fff; font-size: 12px;}
+#copyr>a{ color:#fff;}
+/*---------------ANIMATION-----------------*/
+@keyframes young_Shake{
+  0%{
+  	margin-top: 0px;
+  	transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+  }
+  30%{
+  	margin-top: 10px;
+    transform:rotate(15deg);
+    -webkit-transform:rotate(15deg);
+  }
+  80%{
+	margin-top: 16px
+    transform:rotate(-15deg);
+    -webkit-transform:rotate(15deg);
+  }
+  100%{
+	margin-top: 0px;
+    transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+  }
+}
